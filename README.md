@@ -41,7 +41,7 @@ https://github.com/sculove/rxjs-book/blob/master/docs/part1/05.summary.md
 -----------------------------
 ## 부록. 함수형 프로그래밍
 
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/99.functional.md
+https://github.com/sculove/rxjs-book/blob/master/docs/part1/99.funtional.md
 
 -----------------------------
 
