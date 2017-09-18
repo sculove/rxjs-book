@@ -47,11 +47,14 @@ https://github.com/sculove/rxjs-book/blob/master/docs/part1/99.funtional.md
 
 ## 2부
 RxJS를 이용하여 실제 서비스를 만든다.
+### RxJS 란 무엇인가?
+### RxJS의 핵심은 Observable 
+### ...
 
 --------------------------------
 
 ## 3부
-Angular2와 RxJS의 활용에 대한 이야기를 푸는 장
+pokemon 로 알아보는 RxJS활용 예제
 
 
 
