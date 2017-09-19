@@ -24,7 +24,7 @@ RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으�
 
 ### [RxJS를 시작하기 전에](https://github.com/sculove/rxjs-book/blob/master/docs/part1/01.intro.md)
 
-### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오](https://github.com/sculove/rxjs-book/blob/master/docs/part1/02.input.md)
+### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류](https://github.com/sculove/rxjs-book/blob/master/docs/part1/02.input.md)
 
 ### [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](https://github.com/sculove/rxjs-book/blob/master/docs/part1/03.state.md)
 
