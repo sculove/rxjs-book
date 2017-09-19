@@ -22,34 +22,29 @@
 RxJS에 대한 이해.
 RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으로 살펴보고, 개선하고 이렇게 개선된것이 RxJS에 어떻게 표현되어 있는지 정리한다.
 
-### RxJS를 시작하기 전에
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/01.intro.md
+### [RxJS를 시작하기 전에](https://github.com/sculove/rxjs-book/blob/master/docs/part1/01.intro.md)
 
-## RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/02.input.md
+### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오](https://github.com/sculove/rxjs-book/blob/master/docs/part1/02.input.md)
 
-## RxJS가 해결하려고했던 문제2 - 상태 전파 문제 
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/03.state.md
+### [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](https://github.com/sculove/rxjs-book/blob/master/docs/part1/03.state.md)
 
+### [RxJS가 해결하려고했던 문제3 - 로직 처리의 오류](https://github.com/sculove/rxjs-book/blob/master/docs/part1/04.logic.md)
 
-## RxJS가 해결하려고했던 문제3 - 로직 처리의 오류
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/04.logic.md
+### [정리](https://github.com/sculove/rxjs-book/blob/master/docs/part1/05.summary.md)
 
-## 1부 정리
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/05.summary.md
 
 -----------------------------
-## 부록. 함수형 프로그래밍
-
-https://github.com/sculove/rxjs-book/blob/master/docs/part1/99.funtional.md
+### [부록. 함수형 프로그래밍](https://github.com/sculove/rxjs-book/blob/master/docs/part1/99.funtional.md)
 
 -----------------------------
 
 ## 2부
 RxJS의 사용법에 대해 자세히 알아보자.
 ### RxJS 란 무엇인가?
-### RxJS의 핵심은 Observable 
-### ...
+### RxJS의 핵심 Observable
+### RxJSOperator 
+#### RxJS Operator
+#### 마블 다이어그램
 
 --------------------------------
 
