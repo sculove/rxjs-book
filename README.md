@@ -1,4 +1,4 @@
-# 가제: RxJS를 이용한 안정적인 웹어플리케이션 만들기
+# 가제: 잘 알고 쓰자. RxJS
 
 > ##### rxjs-book 1차 베타리뷰
 > 
@@ -9,7 +9,6 @@
 > 출판시 베타 리뷰어로 모시도록 하겠습니다.
 > 
 > 감사합니다.
-
 
 
 # Table of Contents
@@ -40,9 +39,9 @@ RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으�
 
 ## 2부
 RxJS의 사용법에 대해 자세히 알아보자.
-### RxJS 란 무엇인가?
-### RxJS의 핵심 Observable
-### RxJSOperator 
+### [RxJS 란 무엇인가?](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/01.%20What%20is%20rxjs.md)
+### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/02.%20core%20observable.md) `WIP`
+### RxJS Operator 
 #### RxJS Operator
 #### 마블 다이어그램
 
