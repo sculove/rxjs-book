@@ -40,10 +40,14 @@ RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으�
 ## 2부
 RxJS의 사용법에 대해 자세히 알아보자.
 ### [RxJS 란 무엇인가?](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/01.%20What%20is%20rxjs.md)
-### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/02.%20core%20observable.md) `WIP`
-### RxJS Operator 
-#### RxJS Operator
+### [Observable 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/02.%20How%20to%20create%20Observable.md) 
+
+### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/03.%20Core%20of%20RxJS%20-%20Observable.md) 
+
+### RxJS의 꽃 Operator 
+#### operator란 무엇인가?
 #### 마블 다이어그램
+#### 자동완성 예제를 통한 Operator 알아가기
 
 --------------------------------
 
