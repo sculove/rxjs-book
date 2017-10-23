@@ -44,10 +44,14 @@ RxJS의 사용법에 대해 자세히 알아보자.
 
 ### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/03.%20Core%20of%20RxJS%20-%20Observable.md) 
 
-### RxJS의 꽃 Operator 
-#### operator란 무엇인가?
-#### 마블 다이어그램
-#### 자동완성 예제를 통한 Operator 알아가기
+### [RxJS Operator를 살펴보기 전에](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/04.%20Before%20learning%20operator.md) 
+
+### [[Operator 예제] 자동완성 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
+
+### [[Operator 예제] 애니메이션 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20animate.md) 
+
+### [[Operator 예제] 캐로셀 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20carousel.md) 
+
 
 --------------------------------
 
