@@ -40,15 +40,18 @@ RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으�
 ## 2부
 RxJS의 사용법에 대해 자세히 알아보자.
 ### [RxJS 란 무엇인가?](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/01.%20What%20is%20rxjs.md)
+
 ### [Observable 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/02.%20How%20to%20create%20Observable.md) 
 
 ### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/03.%20Core%20of%20RxJS%20-%20Observable.md) 
 
 ### [RxJS Operator를 살펴보기 전에](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/04.%20Before%20learning%20operator.md) 
 
-### [[Operator 예제] 자동완성 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
+### [[Operator 예제] 자동완성 UI 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
 
-### [[Operator 예제] 애니메이션 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20animate.md) 
+### [[Operator 예제] 자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
+
+### [[Operator 예제] 애니메이션 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20animation.md) 
 
 ### [[Operator 예제] 캐로셀 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20carousel.md) 
 
