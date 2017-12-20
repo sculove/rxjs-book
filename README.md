@@ -47,9 +47,11 @@ RxJS의 사용법에 대해 자세히 알아보자.
 
 ### [RxJS Operator를 살펴보기 전에](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/04.%20Before%20learning%20operator.md) 
 
-### [[Operator 예제] 자동완성 UI 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
+### [[Operator] 자동완성 UI 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
 
-### [[Operator 예제] 자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
+### [[Operator] 자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
+
+### [[Subject] 자동완성 UI 만들기 more](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_more.md) 
 
 ### [[Operator 예제] 애니메이션 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20animation.md) 
 
@@ -61,7 +63,7 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ## 3부
 RxJS를 이용하여 실제 서비스를 만든다.
 
-pokemon 로 알아보는 RxJS활용 예제
+~~pokemon~~ 로 알아보는 RxJS활용 예제
 
 
 
