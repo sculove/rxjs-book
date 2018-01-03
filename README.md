@@ -1,4 +1,4 @@
-# 가제: 잘 알고 쓰자. RxJS
+# 가제: Top-down 방식의 예제로 익히는 RxJS
 
 > ##### rxjs-book 1차 베타리뷰
 > 
@@ -10,11 +10,10 @@
 > 
 > 감사합니다.
 
-
 # Table of Contents
 
 ### 시작하기 전에
-- rxjs5 설치 방법
+- rxjs5.5+ 설치 방법
 - 책 예제 사용법
 
 ## 1부
@@ -40,30 +39,37 @@ RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으�
 ## 2부
 RxJS의 사용법에 대해 자세히 알아보자.
 ### [RxJS 란 무엇인가?](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/01.%20What%20is%20rxjs.md)
-
 ### [Observable 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/02.%20How%20to%20create%20Observable.md) 
 
 ### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/03.%20Core%20of%20RxJS%20-%20Observable.md) 
 
 ### [RxJS Operator를 살펴보기 전에](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/04.%20Before%20learning%20operator.md) 
 
-### [[Operator] 자동완성 UI 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
+### [자동완성 UI 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
 
-### [[Operator] 자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
+### [자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
 
-### [[Subject] 자동완성 UI 만들기 more](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_more.md) 
+### [자동완성 UI 만들기 more](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20autocomplete_more.md) 
 
-### [[Operator 예제] 애니메이션 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20animation.md) 
+-----------------------------
+### [부록. RxJS의 Subjects](https://github.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
 
-### [[Operator 예제] 캐로셀 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20carousel.md) 
+-----------------------------
 
+### [캐로셀 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/08.%20carousel-1.md) 
+
+### [캐로셀 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/09.%20carousel-2.md) 
 
 --------------------------------
 
+### [부록. RxJS의 Scheduler]
+
+
+--------------------------------
 ## 3부
 RxJS를 이용하여 실제 서비스를 만든다.
 
-~~pokemon~~ 로 알아보는 RxJS활용 예제
+"지진 상황 서비스" RxJS활용 예제
 
 
 
