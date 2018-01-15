@@ -17,6 +17,8 @@
 - rxjs5.5+ 설치 방법
 - 책 예제 사용법
 
+-----------------------------
+
 ## 1부
 RxJS에 대한 이해.
 RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으로 살펴보고, 개선하고 이렇게 개선된것이 RxJS에 어떻게 표현되어 있는지 정리한다.
@@ -51,8 +53,6 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ### [자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
 
 ### [자동완성 UI 만들기 more](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20autocomplete_more.md) 
-
------------------------------
 
 ### [캐로셀 만들기 1/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/08.%20carousel-1.md) 
 
