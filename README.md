@@ -10,6 +10,7 @@
 > 
 > 감사합니다.
 
+
 # Table of Contents
 
 ### 시작하기 전에
@@ -52,18 +53,12 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ### [자동완성 UI 만들기 more](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20autocomplete_more.md) 
 
 -----------------------------
-### [부록. RxJS의 Subjects](https://github.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
 
------------------------------
+### [캐로셀 만들기 1/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/08.%20carousel-1.md) 
 
-### [캐로셀 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/08.%20carousel-1.md) 
+### [캐로셀 만들기 2/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/09.%20carousel-2.md) 
 
-### [캐로셀 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/09.%20carousel-2.md) 
-
---------------------------------
-
-### [부록. RxJS의 Scheduler]
-
+### [캐로셀 만들기 3/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10.%20carousel-3.md)
 
 --------------------------------
 ## 3부
@@ -71,5 +66,7 @@ RxJS를 이용하여 실제 서비스를 만든다.
 
 "지진 상황 서비스" RxJS활용 예제
 
+-----------------------------
+### [부록. RxJS의 Subjects](https://github.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
 
-
+### 부록. 자바스크립트의 Event Loop와 동시성 처리
