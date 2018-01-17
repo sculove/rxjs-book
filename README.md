@@ -14,10 +14,8 @@
 # Table of Contents
 
 ### 시작하기 전에
-- rxjs5.5+ 설치 방법
+- rxjs6.0+ 설치 방법
 - 책 예제 사용법
-
------------------------------
 
 ## 1부
 RxJS에 대한 이해.
@@ -61,12 +59,12 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ### [캐로셀 만들기 3/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10.%20carousel-3.md)
 
 --------------------------------
-## 3부
+## 3부 `작성중`
 RxJS를 이용하여 실제 서비스를 만든다.
 
 "지진 상황 서비스" RxJS활용 예제
 
 -----------------------------
-### [부록. RxJS의 Subjects](https://github.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
+### [부록. RxJS의 Subjects](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
 
-### 부록. 자바스크립트의 Event Loop와 동시성 처리
+### [부록. RxJS Scheduler와 자바스크립트 비동기 처리 과정의 이해](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10-1.%20eventloop.md)
