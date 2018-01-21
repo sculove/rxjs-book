@@ -21,6 +21,7 @@
 RxJS에 대한 이해.
 RxJS가 해결하고자 했던 3가지 문제를 처음부터 문제 중심으로 살펴보고, 개선하고 이렇게 개선된것이 RxJS에 어떻게 표현되어 있는지 정리한다.
 
+
 ### [RxJS를 시작하기 전에](https://github.com/sculove/rxjs-book/blob/master/docs/part1/01.intro.md)
 
 ### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류](https://github.com/sculove/rxjs-book/blob/master/docs/part1/02.input.md)
@@ -42,15 +43,15 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ### [RxJS 란 무엇인가?](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/01.%20What%20is%20rxjs.md)
 ### [Observable 만들기](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/02.%20How%20to%20create%20Observable.md) 
 
-### [RxJS의 핵심 Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/03.%20Core%20of%20RxJS%20-%20Observable.md) 
+### [RxJS의 핵심. Observable](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/03.%20Core%20of%20RxJS%20-%20Observable.md) 
 
 ### [RxJS Operator를 살펴보기 전에](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/04.%20Before%20learning%20operator.md) 
 
-### [자동완성 UI 만들기 1/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete.md) 
+### [자동완성 만들기 1/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete-1.md) 
 
-### [자동완성 UI 만들기 2/2](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/06.%20autocomplete_advance.md) 
+### [자동완성 만들기 2/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete-2.md) 
 
-### [자동완성 UI 만들기 more](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07.%20autocomplete_more.md) 
+### [자동완성 만들기 3/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/05.%20autocomplete-3.md) 
 
 ### [캐로셀 만들기 1/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/08.%20carousel-1.md) 
 
@@ -62,9 +63,10 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ## 3부 `작성중`
 RxJS를 이용하여 실제 서비스를 만든다.
 
-"지진 상황 서비스" RxJS활용 예제
+"버스 서비스" RxJS활용 예제
 
 -----------------------------
 ### [부록. RxJS의 Subjects](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
 
-### [부록. RxJS Scheduler와 자바스크립트 비동기 처리 과정의 이해](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10-1.%20eventloop.md)
+### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10-1.%20eventloop.md)
+
