@@ -60,13 +60,15 @@ RxJS의 사용법에 대해 자세히 알아보자.
 ### [캐로셀 만들기 3/3](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10.%20carousel-3.md)
 
 --------------------------------
+### [부록. RxJS의 Subjects](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
+
+### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10-1.%20eventloop.md)
+
+
+-----------------------------
+
 ## 3부 `작성중`
 RxJS를 이용하여 실제 서비스를 만든다.
 
 "버스 서비스" RxJS활용 예제
-
------------------------------
-### [부록. RxJS의 Subjects](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/07-1.%20subjects.md) 
-
-### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](https://gitlab.com/sculove/rxjs-book/blob/master/docs/part2/10-1.%20eventloop.md)
 
