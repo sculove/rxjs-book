@@ -1,0 +1,175 @@
+@charset "UTF-8";
+* {
+  font-family: "나눔고딕", NanumGothic, "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif !important; }
+
+li {
+  list-style: none; }
+
+body, h1, h2, h3, h4, h5, ul, li, p, div, dt, dd {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+header {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 50px); }
+
+aside {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 50px;
+  z-index: 100;
+  background-color: white;
+  height: calc(100vh - 50px); }
+
+article {
+  flex-grow: 3; }
+
+.autocomplete {
+  position: relative; }
+  .autocomplete input {
+    width: 250px;
+    height: 27px;
+    border: 0px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #7f7f7f; }
+  .autocomplete .layer {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+    z-index: 110;
+    display: none;
+    color: black; }
+    .autocomplete .layer li {
+      border-top: 1px solid #bec8d8; }
+      .autocomplete .layer li a {
+        display: block;
+        padding: 10px; }
+      .autocomplete .layer li strong {
+        color: #00c; }
+      .autocomplete .layer li span {
+        font-size: 15px; }
+      .autocomplete .layer li div {
+        font-size: 12px;
+        color: #9E9E9E; }
+      .autocomplete .layer li:hover {
+        background-color: #eee; }
+  .autocomplete .loading {
+    color: #888383;
+    position: absolute;
+    width: 100%;
+    padding: 6px 0px;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    display: none; }
+
+.stations .title-container {
+  background-color: black;
+  color: #e7ad52;
+  padding: 10px;
+  position: relative; }
+  .stations .title-container .close {
+    position: absolute;
+    right: 10px; }
+
+.stations ul {
+  max-width: 360px; }
+
+.stations li:first-child {
+  padding-top: 10px; }
+  .stations li:first-child .line_detail {
+    top: 10px !important; }
+
+.stations li:last-child .line_detail {
+  bottom: 10px !important; }
+
+.stations li .line {
+  float: left;
+  width: 45px;
+  position: relative;
+  height: 60px; }
+  .stations li .line .line_detail {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    z-index: 1;
+    width: 5px;
+    background-color: #386de8; }
+  .stations li .line .direction {
+    color: #386de8;
+    right: 10px;
+    top: 6px;
+    z-index: 1;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white; }
+
+.stations li .text {
+  overflow: hidden;
+  padding: 0 5px;
+  height: 60px;
+  line-height: 30px; }
+  .stations li .text span {
+    display: block;
+    font-size: 13px;
+    color: #979899; }
+
+.bus-routes {
+  padding: 0px 10px;
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .bus-routes dt {
+    padding-bottom: 10px;
+    font-size: 18px; }
+    .bus-routes dt strong {
+      color: #00c; }
+    .bus-routes dt span {
+      color: #979899;
+      font-size: 13px; }
+  .bus-routes dd {
+    padding: 5px 0px; }
+    .bus-routes dd strong {
+      color: #00c; }
+    .bus-routes dd .type {
+      background-color: green;
+      color: white;
+      padding: 3px;
+      border-radius: 5px;
+      font-size: 12px; }
+    .bus-routes dd .red {
+      background-color: #FF5E99; }
+    .bus-routes dd .yellow {
+      background-color: #e7ad52; }

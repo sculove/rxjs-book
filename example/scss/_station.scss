@@ -1,0 +1,68 @@
+$LIST-HEIGHT: 60px;
+
+.stations {
+    .title-container {
+        background-color: black;
+        color: #e7ad52;
+        padding: 10px;
+        position: relative;
+        .close {
+            position: absolute;
+            right:10px;
+        }
+    }
+    ul {
+        max-width: 360px;
+    }
+
+    li {
+        &:first-child {
+            padding-top:10px;
+            .line_detail {
+                top: 10px !important;
+            }
+        }
+        &:last-child {
+            .line_detail {
+                bottom: 10px !important;
+            }
+        }
+        .line {
+            float: left;
+            width: 45px;
+            position: relative;
+            height: $LIST-HEIGHT;
+            .line_detail {
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 15px;
+                z-index: 1;
+                width: 5px;
+                background-color: #386de8;
+            }
+            .direction {
+                color: #386de8;
+                right: 10px;
+                top: 6px;
+                z-index: 1;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                background-color: white;
+            }
+        }
+        .text {
+            overflow: hidden;
+            padding: 0 5px;
+            height: $LIST-HEIGHT;
+            line-height: $LIST-HEIGHT/2;
+            span {
+                display: block;
+                font-size: 13px;
+                color: #979899;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.autocomplete {
+  position: relative;
+  input {
+    width: 250px;
+    height: 27px;
+    border: 0px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #7f7f7f;
+  }
+  .layer {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+    z-index: 110;
+    display: none;
+    color: black;
+    
+    li {
+      border-top: 1px solid #bec8d8;
+      
+      a {
+        display: block;
+        padding: 10px;
+      }
+
+      strong {
+        color: #00c;
+      }
+      span {
+        font-size: 15px;
+      }
+      div {
+        font-size: 12px;
+        color: #9E9E9E;
+      }
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+  .loading {
+    color: #888383;
+    position: absolute;
+    width: 100%;
+    padding: 6px 0px;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    display: none;
+  }
+}

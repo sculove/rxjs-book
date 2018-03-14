@@ -1,0 +1,19 @@
+* {
+  font-family: '나눔고딕',NanumGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif!important;
+}
+
+li {
+  list-style: none;
+}
+
+body, h1, h2, h3, h4, h5, ul, li, p, div, dt, dd {
+  margin:0px;
+  padding:0px;
+}   
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}

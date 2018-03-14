@@ -1,0 +1,25 @@
+### 초기 화면 구성시 - 위치 좌표 주변 정류소 리스트 조회
+GET http://localhost:3000/station/around/126.9783882/37.5666103
+# - 현재 위치 기준으로 버스 정류소 정보를 '지도'에 표시.
+
+### 자동완성으로 조회 - 버스번호(routeName)로 버스 리스트 조회
+GET http://localhost:3000/bus/15
+# - 버스를 통해 "버스 노선" 보이기
+
+### 버스정류소(stationId)를 거쳐가는 버스번호(routeName) 리스트 조회
+# GET http://localhost:3000/bus/pass/station/231000300
+GET http://localhost:3000/bus/pass/station/101000038
+# - 버스 정류소 정보에서 버스 번호들을 표시.
+# - 표시한 버스 번호를 선택하면 다시 "버스 노선" 보이기
+# - 지도에서 버스 정류소 상세 선택 - 마우스 클릭시 툴팁으로 할까?
+# - 버스 노선에서 정류소 상세 선택 - 지도 위치로 이동 지도에서 버스 정류소 상세 보이기
+
+### 버스 노선(routeId)으로 정류소 리스트 조회
+GET http://localhost:3000/station/pass/218000010
+# - 버스 노선의 리스트를 지도에 표시.
+
+### 버스 노선(routeId)으로 현재 운행차량의 정류소(stationId) 리스트를 알수 있다.
+GET http://localhost:3000/bus/realtime/208000001
+# - "버스 노선"에 함께 표시
+# - 이건 시간 남으면...
+

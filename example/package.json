@@ -1,0 +1,24 @@
+{
+  "name": "bus-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'npm run server' 'npm run watch-scss'  # run",
+    "server": "nodemon --inspect api-server.js # API 처리하는 서버",
+    "watch-scss": "node-sass scss/style.scss -o . -w # sass 컴파일"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "rxjs": "^5.5.7",
+    "express": "^4.16.3",
+    "xml2json": "^0.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.2"
+  }
+}
