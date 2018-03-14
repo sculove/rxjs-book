@@ -17,9 +17,3 @@ GET http://localhost:3000/bus/pass/station/101000038
 ### 버스 노선(routeId)으로 정류소 리스트 조회
 GET http://localhost:3000/station/pass/218000010
 # - 버스 노선의 리스트를 지도에 표시.
-
-### 버스 노선(routeId)으로 현재 운행차량의 정류소(stationId) 리스트를 알수 있다.
-GET http://localhost:3000/bus/realtime/208000001
-# - "버스 노선"에 함께 표시
-# - 이건 시간 남으면...
-
