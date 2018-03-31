@@ -14,6 +14,10 @@
 - rxjs6.0+ 설치 방법 `WIP`
 - 책 예제 사용법 `WIP`
 
+## 시작하기 전에
+- rxjs6.0+ 설치 방법 `WIP`
+- 책 예제 사용법 `WIP`
+
 ## 1부 - RxJS에 대한 이해
 ### [RxJS를 시작하기 전에](./docs/part1/01-intro.md)
 
@@ -25,11 +29,9 @@
 
 ### [1부를 마치며](./docs/part1/05-summary.md)
 
-------
 
 ### [부록. 함수형 프로그래밍](./docs/part1/99-functional.md)
 
-------
 
 
 
@@ -53,12 +55,10 @@
 
 ### [캐로셀 UI 애니메이션 만들기](./docs/part2/10-carousel-3.md)
 
---------------------------------
 ### [부록. RxJS의 Subjects](./docs/part2/98-subjects.md)
 
 ### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](./docs/part2/99-eventloop.md)
 
-------
 
 
 
@@ -75,8 +75,6 @@
 
 ### [URL공유 기능과 초기로딩 처리하기](./docs/part3/04-example-4.md)
 
------------------------------
 ### [부록. 예제에서 사용된 오픈 API](./docs/part3/99-openapi.md) 
 
-------
 
