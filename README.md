@@ -33,37 +33,37 @@
 
 
 ## 2부 - RxJS 사용하기
-### [RxJS 란 무엇인가?](./docs/part2/01-What-is-rxjs.md)
+### RxJS 란 무엇인가?
 
 > 실습 예제 https://github.com/sculove/rxjs-book/tree/master/example/part2/01.rxjs
 
-### [Observable 만들기](./docs/part2/02-How-to-create-Observable.md) 
+### Observable 만들기
 
 > 실습 예제 https://github.com/sculove/rxjs-book/tree/master/example/part2/02.create
 
-### [RxJS의 핵심. Observable](./docs/part2/03-Core-of-RxJS-Observable.md) 
+### RxJS의 핵심. Observable
 
-### [RxJS Operator를 살펴보기 전에](./docs/part2/04-Before-learning-operator.md) 
+### RxJS Operator를 살펴보기 전에
 ------------------------
-### [자동완성 UI 만들기](./docs/part2/05-autocomplete-1.md) 
+### 자동완성 UI 만들기
 
-### [자동완성 UI 사용성 올리기](./docs/part2/06-autocomplete-2.md) 
+### 자동완성 UI 사용성 올리기
 
-### [자동완성 UI와 Subject](./docs/part2/07-autocomplete-3.md) 
+### 자동완성 UI와 Subject
 
-### [부록. RxJS의 Subjects](./docs/part2/98-subjects.md)
+### 부록. RxJS의 Subjects
 
 > 실습 예제 https://github.com/sculove/rxjs-book/tree/master/example/part2/03.autocomplete
 
 ------------------------
 
-### [캐로셀 UI 만들기](./docs/part2/08-carousel-1.md) 
+### 캐로셀 UI 만들기
 
-### [캐로셀 UI 상태 관리하기](./docs/part2/09-carousel-2.md) 
+### 캐로셀 UI 상태 관리하기
 
-### [캐로셀 UI 애니메이션 만들기](./docs/part2/10-carousel-3.md)
+### 캐로셀 UI 애니메이션 만들기
 
-### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](./docs/part2/99-eventloop.md)
+### 부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler
 
 
 > 실습 예제 https://github.com/sculove/rxjs-book/tree/master/example/part2/04.carousel
@@ -74,16 +74,16 @@
 > 실습 예제 환경 https://github.com/sculove/rxjs-book-example
 
 
-### [버스노선 조회 서비스 살펴보기](./docs/part3/01-example-1.md)
+### 버스노선 조회 서비스 살펴보기
 
-### [지도 영역 만들기](./docs/part3/02-example-2.md)
+### 지도 영역 만들기
 
-### [자동완성 UI 만들기](./docs/part3/03-example-3.md)
+### 자동완성 UI 만들기
 
-### [URL공유 기능과 초기로딩 처리하기](./docs/part3/04-example-4.md)
+### URL공유 기능과 초기로딩 처리하기
 
-### [3부를 마치며](./docs/part3/04-example-5.md)
+### 3부를 마치며
 
-### [부록. 예제에서 사용된 오픈 API](./docs/part3/99-openapi.md) 
+### 부록. 예제에서 사용된 오픈 API
 
 
