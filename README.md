@@ -18,11 +18,11 @@
 
 ### [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](./docs/part1/03.state.md)
 
-> 실습 예제 https://github.com/sculove/rxjs-book/tree/master/example/part1/02.state
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part1/02.state)
 
 ### [RxJS가 해결하려고했던 문제3 - 로직 처리의 오류](./docs/part1/04.logic.md)
 
-> 실습 예제 https://github.com/sculove/rxjs-book/tree/master/example/part1/03.logic
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part1/03.logic)
 
 ### [1부를 마치며](./docs/part1/05.summary.md)
 
