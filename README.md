@@ -4,7 +4,7 @@
 > 
 > 게시된 글의 내용을 인용하는 경우에는 꼭! 사전에 저에게 연락을 주세요.
 > 
-> 책의 1부 내용만을 공개합니다.
+> 책의 내용 일부를 공개합니다.
 > 
 > 감사합니다.
 
@@ -14,13 +14,13 @@
 ## 1부 - RxJS에 대한 이해
 ### [RxJS를 시작하기 전에](./docs/part1/01.intro.md)
 
-### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류](./docs/part1/02.input.md)
+### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류](http://sculove.github.io/blog/2017/06/30/rxjsbook1/)
 
-### [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](./docs/part1/03.state.md)
+### [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](http://sculove.github.io/blog/2017/07/26/rxjsbook2/)
 
 > [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part1/02.state)
 
-### [RxJS가 해결하려고했던 문제3 - 로직 처리의 오류](./docs/part1/04.logic.md)
+### [RxJS가 해결하려고했던 문제3 - 로직 처리의 오류](http://sculove.github.io/blog/2017/07/26/rxjsbook3/)
 
 > [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part1/03.logic)
 
@@ -30,7 +30,7 @@
 
 
 ## 2부 - RxJS 사용하기
-### RxJS 란 무엇인가?
+### [RxJS 란 무엇인가?](http://sculove.github.io/blog/2017/10/07/rxjsbook4/)
 
 > [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part2/01.rxjs)
 
@@ -60,7 +60,7 @@
 
 ### 캐로셀 UI 애니메이션 만들기
 
-### 부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler
+### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](http://sculove.github.io/blog/2018/01/18/javascriptflow/)
 
 
 > [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part2/04.carousel)
