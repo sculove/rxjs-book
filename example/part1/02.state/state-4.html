@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+
+<body>
+    <h1>RxJS가 해결하려고했던 문제2 - 상태 전파 문제</h1>
+    <h2>RxJS가 개선한 'Observer Pattern'</h2>
+    <script>
+    const numbers$ = rxjs.of([1, 2, 3, 4, 5, 6, 7, 8]);
+
+    // next, error, complete가 있는 객체를 받음
+    numbers$.subscribe({
+        next(v) {
+            console.log(v);
+        },
+        error(e) {
+            console.error(e);
+        },
+        complete() {
+            console.log("complete");
+        }
+    });
+
+    // next 함수만 받음
+    numbers$.subscribe(v => {
+        console.log(v);
+    });
+
+    // next, error 함수만 받음
+    numbers$.subscribe(v => {
+        console.log(v);
+    }, e => {
+        console.error(e);
+    });
+
+    // next, error, complete 함수를 받음
+    numbers$.subscribe(v => {
+        console.log(v);
+    }, e => {
+        console.error(e);
+    }, () => {
+        console.log("complete");
+    });   
+    </script>
+</body>
+
+</html>

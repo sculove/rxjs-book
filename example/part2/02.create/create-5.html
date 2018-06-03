@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>of</h2>
+<script>
+	const { Observable } = rxjs;
+	const { of } = rxjs;
+
+	of(10, 20, 30)
+	.subscribe({
+		next: console.log,
+		error: console.error,
+		complete: () => console.log("완료")
+	});
+
+	// 10
+	// 20
+	// 30
+	// 완료
+</script>
+</body>
+</html>

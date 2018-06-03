@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>Observable 생성자를 이용하여 Observable 만들기</h2>
+<script>
+	const { Observable } = rxjs;
+	const numbers$ = new Observable(function subscribe(observer) {
+		observer.next(1);
+		observer.next(2);
+		observer.next(3);
+	});
+	numbers$.subscribe(v => console.log(v));
+
+	// 1
+	// 2
+	// 3
+</script>
+</body>
+</html>

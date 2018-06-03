@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>구독 해제</h2>
+<script>
+const { Observable } = rxjs;
+	const interval$ = new Observable(function subscribe(observer) {
+		const id = setInterval(function () {
+			observer.next(new Date().toString());
+		}, 1000);
+		return function () { // 자원을 해제하는 함수
+			console.log("interval 제거");
+			clearInterval(id);
+		};
+	});
+	const subscription = interval$.subscribe(v => console.log(v));
+
+	// 5초 후 구독을 해제한다.
+	setTimeout(function () {
+		subscription.unsubscribe();
+	}, 5000);
+
+	// "Sun Oct 01 2017 01:34:33 GMT+0900 (KST)"
+	// "Sun Oct 01 2017 01:34:34 GMT+0900 (KST)"
+	// "Sun Oct 01 2017 01:34:35 GMT+0900 (KST)"
+	// "Sun Oct 01 2017 01:34:36 GMT+0900 (KST)"
+	// "Sun Oct 01 2017 01:34:37 GMT+0900 (KST)"
+	// "Sun Oct 01 2017 01:34:38 GMT+0900 (KST)"
+	// "Sun Oct 01 2017 01:34:39 GMT+0900 (KST)"
+	// "interval 제거"
+</script>
+</body>
+</html>

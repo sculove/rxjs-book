@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>empty</h2>
+<script>
+const { EMPTY, of } = rxjs;
+const { map } = rxjs.operators;
+
+of(1, -2, 3).pipe(
+  map(number => number < 0 ? EMPTY : number)
+)
+.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+
+// 1
+// empty Observable
+// 3
+</script>
+</body>
+</html>

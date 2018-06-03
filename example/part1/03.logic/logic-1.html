@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<style>
+li,ul {
+	list-style: none;
+	padding:0;
+}
+dt {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.card {
+	background-color: #e3e3e3;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 10px 0;
+}
+.color {
+	display: inline-block;
+    width: 40px;
+    height: 13px;
+    margin-left: 5px;
+	border: 1px solid #333;
+}
+</style>
+</head>
+<body>
+	<h1>RxJS가 해결하려고했던 문제3 - 로직 오류</h1>
+	<h2>개선 전 예제</h2>
+<ul id="users"></ul>
+<script>
+	fetch("https://swapi.co/api/people/?format=json").then(res => {
+		if (res.status === 200) {
+			return res.json();
+		} else {
+			throw new Error("Error");
+		}
+	}).then(jsonData => {
+		document.getElementById("users").innerHTML = process(jsonData);
+	}).catch(e => {
+		console.error(e);
+	});
+
+	// 데이터를 처리하는 함수
+	function process(people) {
+		const html = [];
+		for (const user of people.results) {
+			if (/male|female/.test(user.gender)) {
+				let broca;
+				let bmi;
+				if (user.gender == "male") {
+					broca = (user.height - 100 * 0.9).toFixed(2);
+					bmi = (user.height / 100 * user.height / 100 * 22).toFixed(2);
+				} else {
+					broca = (user.height - 100 * 0.9).toFixed(2);
+					bmi = (user.height / 100 * user.height / 100 * 21).toFixed(2);
+				}
+				const obesityUsingBroca = ((user.mass - broca) / broca * 100).toFixed(2);
+				const obesityUsingBmi = ((user.mass - bmi) / bmi * 100).toFixed(2);
+
+				html.push(`<li class='card'>
+			  <dl>
+			      <dt>${user.name} <i class="fa fa-${user.gender}"></i></dt>
+			      <dd><span>키 : </span><span>${user.height} cm</span></dd>
+			      <dd><span>몸무게: </span><span>${user.mass} kg</span></dd>
+			      <dd><span>BROCA 표준체중 : </span><span>${broca} kg</span></dd>
+			      <dd><span>BROCA 비만도 : ${obesityUsingBroca}</span></dd>
+			      <dd><span>BMI 표준체중 : </span><span>${bmi} kg</span></dd>
+			      <dd><span>BMI 비만도 : ${obesityUsingBmi}</span></dd>
+			  </dl>
+		      </li>`);
+			}
+		}
+		return html.join("");
+	}
+</script>
+</body>
+</html>

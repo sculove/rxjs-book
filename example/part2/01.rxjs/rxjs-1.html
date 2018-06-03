@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>RxJS란 무엇인가?</h1>
+	<h2>RxJS 첫번째 예제</h2>
+<script>
+	const { fromEvent } = rxjs;
+	const { pluck } = rxjs.operators;
+	const currentTarget$ = fromEvent(document, "click").pipe(
+		pluck("currentTarget")
+	);  // observable
+
+	const observer = currentTarget => {
+		console.log(currentTarget);
+	};
+	currentTarget$.subscribe(observer);
+</script>
+</body>
+</html>

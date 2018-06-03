@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>from</h2>
+<script>
+const { from } = rxjs;
+from([10, 20, 30])
+.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+// 10
+// 20
+// 30
+// 완료
+
+const arguments$ = (function() {
+  return from(arguments);
+})(1, 2, 3)
+.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+// 1
+// 2
+// 3
+// 완료
+
+const map$ = from(new Map([[1, 2], [2, 4], [4, 8]]));
+map$.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+
+// [1, 2]
+// [2, 4]
+// [4, 8]
+// 완료
+
+const success$ = from(Promise.resolve(100));
+success$.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+// 100
+// 완료
+
+const fail$ = from(Promise.reject("에러"));
+fail$.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+// 에러
+</script>
+</body>
+</html>

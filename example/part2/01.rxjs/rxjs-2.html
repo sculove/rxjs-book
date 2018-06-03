@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>RxJS란 무엇인가?</h1>
+	<h2>RxJS 두번째 예제</h2>
+<script>
+	const { from } = rxjs;
+	const { filter } = rxjs.operators;
+	
+	const users$ = from([{
+		name: "유비",
+		birthYear: 161,
+		nationality: "촉",
+	}, {
+		name: "손권",
+		birthYear: 182,
+		nationality: "오"
+	}, {
+		name: "관우",
+		birthYear: 160,
+		nationality: "촉",
+	}, {
+		name: "장비",
+		birthYear: 168,
+		nationality: "촉",
+	}, {
+		name: "조조",
+		birthYear: 155,
+		nationality: "위"
+	}, {
+		name: "손권",
+		birthYear: 182,
+		nationality: "오"
+	}
+	]).pipe(
+		filter(user => user.nationality === "촉")
+	)
+
+	const observer = user => console.log(user);
+	users$.subscribe(observer);
+</script>
+</body>
+</html>

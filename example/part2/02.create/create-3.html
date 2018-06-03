@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>데이터 전달이 완료된 경우</h2>
+<script>
+	const { Observable } = rxjs;
+	const numbers$ = new Observable(function subscribe(observer) {
+		try {
+			observer.next(1);
+			observer.next(2);
+			observer.next(3);
+			observer.complete();
+		} catch (e) {
+			observer.error(e);
+		}
+	});
+	numbers$.subscribe({
+		next: v => console.log(v),
+		error: e => console.error(e),
+		complete: () => console.log("데이터 전달 완료")
+	});
+
+	// 1
+	// 2
+	// 3
+	// "데이터 전달완료"
+</script>
+</body>
+</html>

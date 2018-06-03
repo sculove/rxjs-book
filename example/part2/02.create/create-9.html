@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>interval</h2>
+<script>
+const { interval } = rxjs;
+
+interval(1000)
+.subscribe({
+  next: v => console.log(v),
+  error: e => console.log(e),
+  complete: () => console.log("완료")
+});
+
+// 0
+// 1
+// 2
+// ...
+
+</script>
+</body>
+</html>

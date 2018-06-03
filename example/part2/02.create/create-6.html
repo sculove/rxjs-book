@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>Observable 만들기</h1>
+	<h2>range</h2>
+<script>
+const { range } = rxjs;
+
+range(1, 10)
+.subscribe({
+  next: console.log,
+  error: console.error,
+  complete: () => console.log("완료")
+});
+
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 완료
+
+</script>
+</body>
+</html>
