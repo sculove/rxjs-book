@@ -18,11 +18,11 @@
 
 ### [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](http://sculove.github.io/blog/2017/07/26/rxjsbook2/)
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part1/02.state)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part1/02.state)
 
 ### [RxJS가 해결하려고했던 문제3 - 로직 처리의 오류](http://sculove.github.io/blog/2017/07/26/rxjsbook3/)
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part1/03.logic)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part1/03.logic)
 
 ### [1부를 마치며](./docs/part1/05.summary.md)
 
@@ -32,11 +32,11 @@
 ## 2부 - RxJS 사용하기
 ### [RxJS 란 무엇인가?](http://sculove.github.io/blog/2017/10/07/rxjsbook4/)
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part2/01.rxjs)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/01.rxjs)
 
 ### Observable 만들기
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part2/02.create)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/02.create)
 
 ### RxJS의 핵심. Observable
 
@@ -50,7 +50,7 @@
 
 ### 부록. RxJS의 Subjects
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part2/03.autocomplete)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/03.autocomplete)
 
 ------------------------
 
@@ -63,7 +63,7 @@
 ### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](http://sculove.github.io/blog/2018/01/18/javascriptflow/)
 
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/example/part2/04.carousel)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/04.carousel)
 
 
 ## 3부 - RxJS로 버스노선 조회서비스 만들기
