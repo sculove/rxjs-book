@@ -12,7 +12,7 @@
 - rxjs6.0+ 설치 방법 `WIP`
 
 ## 1부 - RxJS에 대한 이해
-### [RxJS를 시작하기 전에](./docs/part1/01-intro.md)
+### [RxJS를 시작하기 전에](./docs/part1/01.intro.md)
 
 ### [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류](./docs/part1/02.input.md)
 
