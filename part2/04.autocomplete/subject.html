@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>자동완성UI 만들기</h1>
+	<h2>subject</h2>
+<script>
+const { Subject } = rxjs;
+const subject = new Subject();
+
+// observerA를 등록
+subject.subscribe({
+  next: (v) => console.log(`observerA: ${v}`)
+});
+// 데이터 1을 전달
+subject.next(1);
+
+// observerB를 등록
+subject.subscribe({
+  next: (v) => console.log(`observerB: ${v}`)
+});
+// 데이터 2를 전달
+subject.next(2);
+</script>
+</body>
+</html>

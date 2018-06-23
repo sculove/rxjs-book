@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+.autocomplete {
+  position: relative;
+  width: 300px;
+}
+#search {
+  width: 100%;
+}
+#suggestLayer {
+  position: absolute;
+  top: 20px;
+  color: #666;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+#suggestLayer li {
+	border: 1px solid #bec8d8;
+  list-style: none;
+}
+.user img {
+  position:relative;
+  float:left;
+  margin-right: 10px;
+}
+.user p {
+  line-height: 50px;   
+  margin:0px;
+  padding:0px;
+}
+#loading {
+	position: absolute;
+	z-index: 2;
+	top: 2px;
+	right: 0px;
+	display: none; /* 로딩바는 처음에는 노출되지 않아야 한다 */
+}
+</style>
+</head>
+<body>
+    <p>사용자 검색</p>
+	<div class="autocomplete">
+		<input id="search" type="input" placeholder="검색하고 싶은 사용자 아이디를 입력해주세요"></input>
+		<ul id="suggestLayer"></ul>
+		<!-- 로딩바 -->
+		<div id="loading">
+			<i class="fas fa-spinner fa-pulse"></i>
+		</div>
+	</div>
+<script>
+const $layer = document.getElementById("suggestLayer");
+const $loading = document.getElementById("loading");
+function drawLayer(items) {
+	$layer.innerHTML = items.map(user => {
+		return `<li class="user">
+<img src="${user.avatar_url}" width="50px" height="50px"/>
+<p><a href="${user.html_url}" target="_blank">${user.login}</a></p>
+</li>`
+	}).join("");
+}
+function showLoading() {
+	$loading.style.display = "block";
+}
+function hideLoading() {
+	$loading.style.display = "none";
+}
+
+// github api: `https://api.github.com/search/users?q=사용자아이디`)
+
+const { fromEvent } = rxjs;
+const { ajax } = rxjs.ajax;	
+</script>
+</body>
+</html>
