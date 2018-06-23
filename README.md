@@ -1,15 +1,9 @@
 # 예제로 익히는 RxJS 첫걸음 (`제목 미정`)
 
-> ##### rxjs-book 1차 베타리뷰
-> 
 > 게시된 글의 내용을 인용하는 경우에는 꼭! 사전에 저에게 연락을 주세요.
-> 
 > 책의 내용 일부를 공개합니다.
-> 
-> 감사합니다.
 
 ## 시작하기 전에
-- rxjs6.0+ 설치 방법 `WIP`
 
 ## 1부 - RxJS에 대한 이해
 ### [RxJS를 시작하기 전에](./docs/part1/01.intro.md)
@@ -40,6 +34,8 @@
 
 ### RxJS의 핵심. Observable
 
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/03.observable)
+
 ### RxJS Operator를 살펴보기 전에
 ------------------------
 ### 자동완성 UI 만들기
@@ -50,7 +46,7 @@
 
 ### 부록. RxJS의 Subjects
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/03.autocomplete)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/04.autocomplete)
 
 ------------------------
 
@@ -63,7 +59,7 @@
 ### [부록. 자바스크립트 비동기 처리 과정과 RxJS Scheduler](http://sculove.github.io/blog/2018/01/18/javascriptflow/)
 
 
-> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/04.carousel)
+> [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part2/05.carousel)
 
 
 ## 3부 - RxJS로 버스노선 조회서비스 만들기
@@ -82,5 +78,3 @@
 ### 3부를 마치며
 
 ### 부록. 예제에서 사용된 오픈 API
-
-

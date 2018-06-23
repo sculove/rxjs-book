@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>RxJS의 핵심. Observable</h1>
+	<h2>Promise</h2>
+<script>
+// 정의
+const promise = new Promise((resolve, reject) => {
+  try {
+    resolve(1);
+  } catch(e) {
+    reject("error promise");
+  }
+});
+
+// 사용
+promise.then(
+  value => console.log(`promise ${value}`),
+  error => console.error(`promise ${error}`)
+);
+</script>
+</body>
+</html>

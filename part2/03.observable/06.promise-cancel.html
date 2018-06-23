@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>RxJS의 핵심. Observable</h1>
+	<h2>Promise-cancel</h2>
+<script>
+const promise = new Promise((resolve, reject) => {
+  try {
+    let value = 0;
+    setInterval(() => {
+        console.log(`is going ${value}`);
+        resolve(value++);
+    }, 1000);
+  } catch(e) {
+    reject("error promise");
+  }
+});
+
+promise.then(
+  value => console.log(`promise value ${value}`)
+);
+</script>
+</body>
+</html>

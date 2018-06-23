@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>RxJS의 핵심. Observable</h1>
+	<h2>Promise-lazy</h2>
+<script>
+const promise = new Promise((resolve, reject) => {
+  console.log("create promise");
+  try {
+    resolve(1);
+  } catch(e) {
+    reject("error promise");
+  }
+});
+
+// then은 결정된 상태값만을 반환한다.
+promise.then(
+  value => console.log(`첫번째 promise ${value}`),
+  error => console.error(`첫번째 promise ${error}`)
+); // 1 출력
+promise.then(
+  value => console.log(`첫번째 promise ${value}`),
+  error => console.error(`첫번째 promise ${error}`)
+); // 1 출력
+</script>
+</body>
+</html>

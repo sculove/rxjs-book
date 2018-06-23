@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>RxJS의 핵심. Observable</h1>
+	<h2>Observable</h2>
+<script>
+const { interval } = rxjs;
+// 정의
+const numbers$ = interval(1000);
+
+// 사용: subscribe가 호출되는 순간부터 데이터가 전달된다.
+numbers$.subscribe(value => console.log(`첫번째 ${value}`));
+
+setTimeout(() => {
+    // 또 사용
+    numbers$.subscribe(value => console.log(`두번째 ${value}`));
+}, 2000);
+</script>
+</body>
+</html>

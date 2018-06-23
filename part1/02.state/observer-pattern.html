@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>RxJS가 해결하려고했던 문제2 - 상태 전파 문제</h1>
+    <h2>'Observer Pattern' 적용 하기</h2>
+    <script>
+    class Subject {
+        constructor() {
+            this._observers = [];
+        }
+        add(observer) {
+            this._observers.push(observer);
+        }
+        remove(observer) {
+            let idx = this._observers.indexOf(observer);
+            if (idx !== -1) {
+                this._observers.splice(idx, 1);
+            }
+        }
+        notify(status) {
+            this._observers.forEach(v => {
+                v.update(status);
+            });
+        }
+    }
+
+    class NewsPaper extends Subject {
+        setNews(news) {
+            this.notify(news);
+        }
+    }
+
+    class NewsScrapper {
+        update(news) {
+            console.log(`뉴스를 스크랩하자 - ${news}`);
+        }
+    };
+
+    class NewsReader {
+        update(news) {
+            console.log(`뉴스를 읽자 - ${news}`);
+            // 난 뉴스 발행자이기도 한데...(기러기 퍼 나르자)
+            // newsPaper.setNews("북한 미사일 발사로 피난.... 가는 일은 없다");
+        }
+    }
+
+    let newsPaper = new NewsPaper();
+
+    // 구독하기
+    newsPaper.add(new NewsScrapper());
+    newsPaper.add(new NewsReader());
+
+    // 상태 변경
+    // newsPaper.setNews("북한 미사일 발사!!!");
+    // newsPaper.setNews("코스피 최저점 이탈!!!");
+    // newsPaper.setNews("남북평화회담 성사");
+    // newsPaper.setNews("남북통일");
+
+    // 문제점 1. NewsPaper의 구독이 중지된 경우, NewsPaper에서 에러가 발생한 경우
+    //         NewsScrapper와 NewsReader에게 어떻게 알려주지?
+    // 문제점 2. NewsScrapper가 NewsPaper인 경우는 무한루프?
+    // 문제점 3. 구독 전에 발송한 정보를 볼 수는 없나?
+    </script>
+</body>
+
+</html>
