@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+</head>
+<body>
+	<h1>캐로셀UI 만들기</h1>
+	<h2>AsyncScheduler + subscribeOn</h2>
+<script>
+const { of, asyncScheduler } = rxjs;
+const { tap, subscribeOn } = rxjs.operators;
+
+const obs$ = of("A", "B", "C")
+.pipe(
+    tap(v => console.log(v, "데이터 처리1")),
+    tap(v => console.log(v, "데이터 처리2")),
+    tap(v => console.log(v, "데이터 처리3")),
+    tap(v => console.log(v, "데이터 처리4")),
+	subscribeOn(asyncScheduler)
+);
+console.log("subscribe 전");
+setTimeout(() => {
+    const start = new Date().getTime();
+    console.log("[1초 후 subscribe]");
+    obs$.subscribe(v => console.log("observer recevied", v));
+    console.log(`subscribe 후 ${new Date().getTime()- start} ms`);
+}, 1000);
+</script>
+</body>
+</html>

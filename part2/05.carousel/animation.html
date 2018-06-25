@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="../../node_modules/rxjs/bundles/rxjs.umd.js"></script>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        margin-top:20px;
+        background-color: burlywood;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+	<h1>캐로셀UI 만들기</h1>
+    <h2>애니메이션</h2>
+    
+    <div class="box" id="box"></div>
+<script>
+    const $box = document.getElementById("box");
+    const { 
+        animationFrameScheduler, 
+        interval, 
+        defer, 
+        concat, 
+        of 
+    } = rxjs;
+    const { map, takeWhile } = rxjs.operators;
+
+    function animation(from, to, duration) {
+        return defer(() => {
+        const scheduler = animationFrameScheduler;
+        const start = scheduler.now();
+        const interval$ = interval(0, scheduler)
+            .pipe( 
+                map(() => (scheduler.now() - start) / duration),
+                takeWhile(rate => rate < 1) 
+            );
+        return concat(interval$, of(1))
+            .pipe(
+                map(rate => from + (to - from) * rate)
+            );
+        });
+    }
+
+    const animation$ = animation(100, 500, 3000);
+    animation$.subscribe(y => $box.style.top = `${y}px`);
+</script>
+</body>
+</html>
