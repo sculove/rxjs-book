@@ -22,31 +22,9 @@
     const $box = document.getElementById("box");
     const { 
         animationFrameScheduler, 
-        interval, 
-        defer, 
-        concat, 
-        of 
+        interval
     } = rxjs;
-    const { map, takeWhile } = rxjs.operators;
 
-    function animation(from, to, duration) {
-        return defer(() => {
-        const scheduler = animationFrameScheduler;
-        const start = scheduler.now();
-        const interval$ = interval(0, scheduler)
-            .pipe( 
-                map(() => (scheduler.now() - start) / duration),
-                takeWhile(rate => rate < 1) 
-            );
-        return concat(interval$, of(1))
-            .pipe(
-                map(rate => from + (to - from) * rate)
-            );
-        });
-    }
-
-    const animation$ = animation(100, 500, 3000);
-    animation$.subscribe(y => $box.style.top = `${y}px`);
 </script>
 </body>
 </html>

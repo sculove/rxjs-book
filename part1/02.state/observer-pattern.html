@@ -23,8 +23,8 @@
             }
         }
         notify(status) {
-            this._observers.forEach(v => {
-                v.update(status);
+            this._observers.forEach(observer => {
+                observer.update(status);
             });
         }
     }
@@ -53,13 +53,17 @@
 
     // 구독하기
     newsPaper.add(new NewsScrapper());
+
+    newsPaper.setNews("Reader는 구독 전....북한 미사일 발사!!!");
+
     newsPaper.add(new NewsReader());
 
     // 상태 변경
-    // newsPaper.setNews("북한 미사일 발사!!!");
-    // newsPaper.setNews("코스피 최저점 이탈!!!");
-    // newsPaper.setNews("남북평화회담 성사");
-    // newsPaper.setNews("남북통일");
+    newsPaper.setNews("북한 미사일 발사!!!");
+    newsPaper.setNews("코스피 최저점 이탈!!!");
+    newsPaper.setNews("남북평화회담 성사");
+    newsPaper.setNews("남북통일");
+    newsPaper.setNews("남북통일");
 
     // 문제점 1. NewsPaper의 구독이 중지된 경우, NewsPaper에서 에러가 발생한 경우
     //         NewsScrapper와 NewsReader에게 어떻게 알려주지?
