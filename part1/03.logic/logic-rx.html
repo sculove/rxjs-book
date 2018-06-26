@@ -50,7 +50,8 @@ dt {
 			reduce((acc, user) => {
 				acc.push(makeHtml(user));
 				return acc;
-			}, [])
+			}, []),
+			map(htmlArr => htmlArr.join(""))
 		)
 		.subscribe(v => {
 			document.getElementById("users").innerHTML = v;
