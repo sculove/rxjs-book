@@ -9,20 +9,19 @@
 	<h2>throwError</h2>
 <script>
 const { throwError, of } = rxjs;
-const { map } = rxjs.operators;
+const { mergeMap } = rxjs.operators;
 
 of(1, -2, 3).pipe(
-  map(number => number < 0 ? throwError("number는 0보다 커야한다") : number)
+  mergeMap(number => number < 0 ? throwError("number는 0보다 커야한다") : of(number))
 )
 .subscribe({
   next: v => console.log(v),
-  error: e => console.log(e),
+  error: e => console.error(e),
   complete: () => console.log("완료")
 });
 
 // 1
-// throwError Observable
-// 3
+// number는 0보다 커야한다
 </script>
 </body>
 </html>
