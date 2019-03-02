@@ -8,14 +8,14 @@
 ## 시작하기 전에
 
 ## 1부 - RxJS에 대한 이해
-- [RxJS를 시작하기 전에](./docs/part1/01.intro.md)
+- RxJS를 시작하기 전에
 - [RxJS가 해결하려고했던 문제1 - 입력 데이터의 오류](http://sculove.github.io/blog/2017/06/30/rxjsbook1/)
 - [RxJS가 해결하려고했던 문제2 - 상태 전파 문제](http://sculove.github.io/blog/2017/07/26/rxjsbook2/)
    > [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part1/02.state)
 - [RxJS가 해결하려고했던 문제3 - 로직 처리의 오류](http://sculove.github.io/blog/2017/07/26/rxjsbook3/)
    > [실습 예제](https://github.com/sculove/rxjs-book/tree/master/part1/03.logic)
-- [1부를 마치며](./docs/part1/05.summary.md)
-- [부록. 함수형 프로그래밍](./docs/part1/99.functional.md)
+- 1부를 마치며
+- 부록. 함수형 프로그래밍
 
 ## 2부 - RxJS 사용하기
 - [RxJS 란 무엇인가?](http://sculove.github.io/blog/2017/10/07/rxjsbook4/)
